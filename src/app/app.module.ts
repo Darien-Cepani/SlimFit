@@ -15,7 +15,6 @@ import { ContainsComponent } from './contains/contains.component';
 import { TimeForEffectComponent } from './time-for-effect/time-for-effect.component';
 import { CookieService } from 'ngx-cookie-service';
 import { FooterComponent } from './footer/footer.component';
-import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +29,6 @@ import { TestComponent } from './test/test.component';
     ContainsComponent,
     TimeForEffectComponent,
     FooterComponent,
-    TestComponent
   ],
   imports: [
     BrowserModule,
