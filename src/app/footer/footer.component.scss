@@ -1,0 +1,25 @@
+.container{
+  background: white;
+  padding-top: 1em;
+  width: 100%;
+  color: #6155a6;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+
+  h1{
+    font-weight: bold;
+  }
+
+  p{
+    font-weight: bold;
+    opacity: 0.7;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .container{
+    background: linear-gradient(90deg, rgba(251,220,241,1) 0%, rgba(253,242,242,1) 100%);
+  }
+}

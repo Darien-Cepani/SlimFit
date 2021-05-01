@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="countdown">
+    <countdown [config]="{leftTime: 86400000 - currTime}"></countdown>
+  </div>
+
+  <p>
+    Porosisni përpara se afati të skadojë <br>
+    dhe merrni një zbritje prej:
+  </p>
+
+  <div class="price">
+
+    <span class="old-price strikethrough">{{ oldPrice }}LEK</span>
+    <span class="new-price">{{ newPrice }}LEK*</span>
+  </div>
+
+  <form>
+    <div>
+      <select name="country">
+        <option value="Albania">Shqipëri</option>
+        <option value="Kosovo">Kosovë</option>
+      </select>
+    </div>
+    <div>
+      <input placeholder="Emër Mbiemër" name="name" type="text" class="input">
+    </div>
+    <div>
+      <input placeholder="Numër telefoni" name="phone" type="tel" class="input">
+    </div>
+    <div>
+      <input type="submit" value="Porosisni SLIM FIT" class="button">
+    </div>
+  </form>
+  <p class="zbritje">* zbritje 50%</p>
+
+</div>
