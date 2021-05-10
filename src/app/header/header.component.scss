@@ -1,55 +1,95 @@
 header {
+  font-family: 'Nexa Light';
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
-  color: #6155a6;
+  color: #28612B;
   display: flex;
   position: relative;
 }
 
-.background-pattern{
+.header-bg{
   object-fit: cover;
+  display: absolute;
   top: 0;
   left: 0;
   z-index: -100;
   width: 100%;
 }
 
-.background-hero{
-  position: absolute;
-  left: 0;
-  z-index: -99;
-  height: 100%;
-}
-
 .wrapper{
   display: flex;
   flex-direction: row;
   height: fit-content;
-  width: 65%;
+  justify-content: space-around;
+  width: 75%;
   position: absolute;
-  top: 10%;
-  right: 5%;
-  margin: auto;
-  border-radius: 30px;
-  background: linear-gradient(145deg, rgba(97,85,166,0.7) 0%, rgba(166,133,226,0.5) 25%, rgba(255,171,225,0.5) 75%, rgba(255,230,230,0.5) 100%);
-  backdrop-filter: blur(15px);
+  top: 17%;
+  left: 13.5%;
+  right: 13.5%;
 }
 
-.info{
-  font-size: 1.5em;
-  margin: auto 1.5em;
-  line-height: 1.7em;
+.ulje{
+  position: absolute;
+  width: 10em;
+  top: 4%;
+  right: 4%;
+}
+
+b{
+  font-family: 'Nexa Bold';
+}
+
+.left{
+  width: 30%;
+  margin: auto 0em;
   display: flex;
-  flex-direction: column;
+  width: fit-content;
   img{
-    width: 70%;
-    margin: 0 auto;
+    width: 300px;
   }
 }
 
-.form{
-  width: 50%;
+.middle{
+  width: 30%;
+  .countdown{
+    text-align: center;
+    margin: 0em 0 2em 0;
+    countdown{
+    font-family: 'Nexa Bold';
+    background-color: #D66378;
+    min-width: 100%;
+    padding: 0.5em 1em;
+    color: white;
+    font-size: 2.5rem;
+    border-radius: 15px;
+    margin: 2em auto;
+    }
+    p{
+      font-family: 'Nexa Bold';
+      width: 70%;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 1em;
+      margin-bottom: 4em;
+      text-transform: uppercase;
+    }
+  }
+  .motto{
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+    margin: 1.5em 0;
+  }
+  li{
+    font-size: 1.5em;
+    line-height: 1.4em;
+  }
+}
+
+.right{
+  width: 40%;
+  margin: auto 0em;
 }
 
 @media only screen and (max-width: 1422px) {

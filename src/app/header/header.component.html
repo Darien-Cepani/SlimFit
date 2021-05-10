@@ -1,32 +1,40 @@
 <header class="header">
-  <img src="/assets/hbg.png" alt="" class="background-hero">
-  <img src="/assets/backgroundpattern.png" alt="" class="background-pattern">
+  <img src="assets/header-bg.jpg" alt="" class="header-bg">
+  <img src="assets/ulje.png" alt="" class="ulje">
   <div class="wrapper">
       <!-- Gen Info -->
-    <div class="info">
-      <img src="/assets/productimage1.png">
+    <div class="left">
+      <img src="assets/shishja.png">
+    </div>
+    <div class="middle">
+      <div class="countdown">
+        <p>
+          Porosisni përpara mbarimit te orarit qe te perfitoni nga oferta
+        </p>
+        <countdown [config]="{leftTime: 86400000 - currTime}"></countdown>
+      </div>
+      <h1 class="motto">Shape Your Life!</h1>
       <ul>
         <li>
-          <b>Nxit</b> djegien aktive te yndyrnave menjëherë pas përdorimit.
+          <b>Nxit</b> djegien aktive te yndyrnave menjëherë pas pirjes.
         </li>
         <li>
-          <b>Humbje peshe</b> pa sforcim fizik.
+          <b>Lufton</b> yndyrën e keqe të organeve të brendshme.
         </li>
         <li>
-          Perberes <b>100% natyrore.</b>
+          <b>Renie</b> ne peshe pa sforcim fizik.
         </li>
         <li>
-          Lufton<b> yndyrën "e keqe"</b> të organeve të brendshme.
-        </li>
-        <li>
-          Është një <b>sukses botëror</b> në fushën e dietologjisë.
+          <b>Është</b> një sukses botëror në fushën e dietologjisë.
         </li>
       </ul>
     </div>
-    <!-- / Gen Info -->
 
     <!-- Input Form -->
+    <div class="right">
       <app-order-form></app-order-form>
+    </div>
     <!-- /Input Form -->
   </div>
 </header>
+

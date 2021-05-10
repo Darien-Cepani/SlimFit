@@ -45,5 +45,9 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-size: 20px;
 }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';

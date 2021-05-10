@@ -1,20 +1,15 @@
 .container{
+  font-family: 'Nexa Light';
   padding: 1.5em;
   text-align: center;
-  color: #6155a6;
-  font-size: 20px;
-  width: fit-content;
-}
-
-.countdown{
-  background-color: red;
-  width: 88%;
-  padding: 0.9em 0.35em;
+  color: #28612B;
+  font-size: 25px;
+  width: 70%;
   margin: 0 auto;
-  color: white;
-  font-size: 2.5rem;
-  font-weight: bold;
-  border-radius: 50px;
+  border: 2px solid #28612B;
+  border-radius: 20px;
+  background-color: rgba(255,255,255,0.5);
+  backdrop-filter: blur(20px);
 }
 
 p{
@@ -25,21 +20,22 @@ p{
 }
 
 .price{
+  width: fit-content;
+  margin: 1.5em auto;
   font-size: 1em;
-  margin: 1.5em 0;
   display: flex;
   justify-content: space-around;
+  align-items: baseline;
 }
 
 .old-price{
-  color: #a685e2;
-  font-size: 2em;
+  font-size: 1.7em;
   margin-right: 0.25em;
 }
 
 .new-price{
-  font-weight: bold;
-  font-size: 2em;
+  font-family: "Nexa Bold";
+  font-size: 2.7em;
 }
 
 .strikethrough{
@@ -63,20 +59,19 @@ p{
 }
 
 .input{
-  padding: 15px 10px 15px 20px;
-  box-shadow: inset 3px 3px 7px #6155a6;
+  padding: 20px 10px 20px 20px;
+  background-color: #eee;
   text-decoration: none;
   margin: 0.6em 0px;
-  border-radius: 50px;
+  border-radius: 15px;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   -o-appearance: none;
   text-align: left;
   border: 0px;
-  width: 90%;
-  background: transparent;
-  color: #6155a6;
+  width: 92%;
+  color: black;
   transition: all 250ms ease-in-out;
   font-weight: bold;
   font-family: inherit;
@@ -87,20 +82,19 @@ p{
 }
 
 select {
-  padding: 15px 10px 15px 20px;
-  box-shadow: inset 3px 3px 7px #6155a6;
+  padding: 20px 10px 20px 20px;
+  background-color: #eee;
   text-decoration: none;
   margin: 0.6em 0px;
-  border-radius: 50px;
+  border-radius: 15px;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   -o-appearance: none;
   text-align: left;
   border: 0px;
-  width: 98.5%;
-  background: transparent;
-  color: #6155a6;
+  width: 100%;
+  color: #28612B;
   transition: all 250ms ease-in-out, border-radius 100ms ease-in-out;
   font-weight: bold;
   font-family: inherit;
@@ -119,14 +113,14 @@ select:active, select:focus{
 }
 
 .input::placeholder{
-  color: #6155a6;
+  color: #28612B;
   font-weight: bold;
   opacity: 0.7;
 }
 
 input:hover, select:hover, textarea:hover{
-  box-shadow: 3px 3px 7px #6155a6;
-  background:#ffe6e6;
+  box-shadow: inset 3px 3px 7px rgba(0,0,0,0.5);
+  background: white;
   color: black;
 }
 
@@ -139,24 +133,23 @@ select:hover{
 }
 
 .button{
+  font-family: "Nexa Bold";
   width: 100%;
-  border: 2px solid #6155a6;
-  color: #6155a6;
+  border: 0;
+  background-color: #E6D766;
+  color: black;
   padding: 1em 1.5em;
-  margin: 2em 0px;
-  background: transparent;
-  border-radius: 50px;
+  margin: 1em 0px;
+  border-radius: 15px;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.3rem;
   cursor: pointer;
   text-align: center;
   transition: all 250ms ease-in-out;
 }
 
 .button:hover{
-  border: 2px solid #6155a6;
-  background: #6155a6;
-  color: #fff;
+  background: #E6D766;
 }
 
 .zbritje{

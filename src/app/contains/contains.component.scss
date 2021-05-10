@@ -1,16 +1,23 @@
 .wrapper{
   margin: 5em auto;
   width: 75%;
-  h1{
-    font-size: 2.5em;
+  text-align: center;
+  .l1{
+    font-size: 2em;
     line-height: 1.3em;
-    color: #6155a6;
     font-weight: bold;
+    color: #E6D766;
   }
-  p{
+  .l2{
+    font-size: 5em;
+    line-height: 1.3em;
+    font-weight: bold;
+    color: #28612B;
+  }
+  .l3{
     font-size: 1.5em;
     line-height: 1.3em;
-    color: #a685e2;
+    color: #8DBF1C;
   }
 }
 
