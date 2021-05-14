@@ -1,54 +1,84 @@
 .container {
   line-height: 2em;
-  height: 75%;
+  height: 80vh;
+  font-family: "Nexa";
 }
 
 .wrapper{
-  width: 75%;
+  max-width: 80%;
+  height: fit-content;
   margin: 5em auto;
+  border: 2px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.top{
-  text-align: center;
+.left{
+  position: relative;
+  border: 2px solid purple;
+  width: 35%;
+  .testimony{
+    border: 2px solid green;
+    padding: 2em;
+    border-radius: 20px;
+    width: 100%;
+    img{
+      border-radius: 10px 10px 10px 10px;
+      margin-right: 2em;
+      width: 25em;
+    }
+    .text{
+      margin-top: 2em;
+      font-size: 1.3em;
+    }
+    .button{
+      font-family: "Nexa Bold";
+      border: 0;
+      background-color: #E6D766;
+      color: black;
+      padding: 1em 1.5em;
+      margin: 0.5em 0px;
+      border-radius: 15px;
+      font-weight: bold;
+      font-size: 1.3rem;
+      cursor: pointer;
+      text-align: center;
+      transition: all 250ms ease-in-out;
+      position: absolute;
+      right: 0;
+      bottom: -2em;
+    }
+    .button:hover, .button:focus{
+      box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
+      background: #fff187;
+    }
+    .button:active{
+      box-shadow: inset 3px 3px 7px rgba(0,0,0,0.5);
+      background: #E6D766;
+      color: black;
+    }
+  }
+}
+
+.right{
+  position: relative;
+  text-align: right;
+  border: 2px solid blue;
+  width: 100%;
   h1{
     font-size: 2.5rem;
     line-height: 1.3;
     font-weight: bold;
-    color: #6155a6;
+    font-family: "Nexa Bold";
+    color: green;
   }
-  p{
-    font-size: 1.5rem;
-    line-height: 1.3;
-    color: #a685e2;
+  .doctor{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
-}
-
-.testimony{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 90%;
-  margin: 3em auto;
-  transition: all 200ms ease-in-out;
-  background-color: white;
-  img{
-    border-radius: 10px 10px 10px 10px;
-    margin-right: 2em;
-    width: 25em;
-  }
-  .text{
-    margin-top: 2em;
-    font-size: 1.3em;
-  }
-}
-
-.img{
-  width: 100%;
-  text-align: center;
-}
-
-.img p{
-  width: 100%;
 }
 
 @media only screen and (max-width: 1422px) {

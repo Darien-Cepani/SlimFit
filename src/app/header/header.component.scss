@@ -6,6 +6,7 @@ header {
   color: #28612B;
   display: flex;
   position: relative;
+  border-bottom: 1.5em solid #28612B;
 }
 
 .header-bg{
@@ -51,7 +52,7 @@ b{
 }
 
 .middle{
-  width: 30%;
+  width: 35%;
   .countdown{
     text-align: center;
     margin: 0em 0 2em 0;
@@ -79,7 +80,7 @@ b{
     font-size: 4em;
     font-weight: bold;
     text-align: center;
-    margin: 1.5em 0;
+    margin: 1.5em 0 0.9em 0;
   }
   li{
     font-size: 1.5em;
