@@ -15,7 +15,7 @@
  */
 
  html {
-  font-family: sans-serif; /* 1 */
+  font-family: "Nexa Light"; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -25,6 +25,7 @@
  */
 
 body {
+  font-family: "Nexa Light"; /* 1 */
   margin: 0;
 }
 
@@ -432,15 +433,4 @@ table {
 td,
 th {
   padding: 0;
-}
-
-.footer-form{
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  margin: 5em auto;
-
-  img{
-    width: 50%;
-  }
 }

@@ -6,6 +6,7 @@ header {
   color: #28612B;
   display: flex;
   position: relative;
+  user-select: none;
   border-bottom: 1.5em solid #28612B;
 }
 
@@ -82,8 +83,18 @@ b{
     text-align: center;
     margin: 1.5em 0 0.9em 0;
   }
-  li{
-    font-size: 1.5em;
+  .list{
+    width: 85%;
+    margin: 0 auto;
+    text-align: baseline;
+  }
+  .fas{
+    color:#28612B;
+    margin: 0 5px;
+  }
+  p{
+    color: black;
+    font-size: 1.6em;
     line-height: 1.4em;
   }
 }

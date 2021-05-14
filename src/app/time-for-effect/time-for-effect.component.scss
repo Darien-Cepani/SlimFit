@@ -1,0 +1,83 @@
+.container {
+  line-height: 2em;
+  height: 100vh;
+  font-family: "Nexa";
+  user-select: none;
+}
+
+.wrapper{
+  max-width: 100%;
+  height: 100%;
+  margin: 10em auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position:relative;
+    img{
+      width: 100%;
+      z-index: -1;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+}
+
+.text{
+  width: 40%;
+  margin: 10em 13em;
+  h1{
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: bold;
+    font-family: "Nexa Bold";
+    color: #CE5D7B;
+  }
+  .list{
+    margin: 5em auto;
+    text-align: baseline;
+  }
+  .fas{
+    color:#28612B;
+    margin: 0 5px;
+  }
+  p{
+    color: black;
+    font-size: 1.6em;
+    line-height: 1.4em;
+  }
+}
+
+@media only screen and (max-width: 1422px) {
+}
+
+@media only screen and (max-width: 1142px) {
+
+}
+
+@media only screen and (max-width: 842px) {
+
+}
+
+@media only screen and (max-width: 530px) {
+  .container{
+    height: fit-content;
+  }
+
+  .wrapper{
+    width: 90%;
+  }
+
+  .testimony{
+    display: block;
+    width: 100%;
+
+    img{
+      border-radius: 10px 10px 10px 10px;
+      width: 100%;
+    }
+  }
+
+  .img p{
+    width: 100%;
+  }
+}

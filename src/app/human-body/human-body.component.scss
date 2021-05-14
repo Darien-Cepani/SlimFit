@@ -1,27 +1,27 @@
 .container{
   width: 100%;
   padding: 5em auto;
+  user-select: none;
+  font-family: "Nexa";
 }
 
 .wrapper{
   --accent-color: #6155a6;
   display: flex;
-  margin: auto;
   width: 75%;
+  margin: 5em auto;
   flex-direction: column;
   height: 90vh;
+  font-family: "Nexa";
 }
 
 .top{
+  text-align: center;
   h1{
-    font-size: 2.5rem;
+    font-size: 7em;
     line-height: 1.3em;
-    color: #6155a6;
-  }
-  p{
-    font-size: 1.5rem;
-    line-height: 1.3em;
-    color: #a685e2;
+    color: #CE5D7B;
+    font-family: "Nexa Bold";
   }
 }
 
@@ -93,8 +93,31 @@
   font-weight: bold;
   justify-content: space-around;
   width: 100%;
-  border: 2px solid red;
-  height: 40%;
+  height: 30%;
+  div{
+    height: fit-content;
+    margin: 1em;
+    transition: all 250ms ease-in-out;
+    margin: auto;
+  }
+  img{
+    width: 100px;
+    transition: all 250ms ease-in-out;
+    // filter: invert(180);
+  }
+  p{
+    margin: 0;
+  }
+}
+
+.percentages{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 50%;
+  margin-top: 5em;
   div{
     height: fit-content;
     margin: 1em;
@@ -102,20 +125,24 @@
     margin: auto;
   }
   div:hover{
-    transform: scale(1.2);
     cursor: pointer;
+    img{
+      transform: scale(1.1);
+      box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+    }
   }
   img{
-    width: 100px;
+    width: 250px;
     transition: all 250ms ease-in-out;
-    opacity: 0.7;
+    box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    z-index: 100;
     // filter: invert(180);
   }
-  img:hover{
-    opacity: 1;
-  }
   p{
-    margin: 0;
+    font-size: 2em;
+    margin-top: 0.5em;
+    line-height: 1.3em;
   }
 }
 
