@@ -47,37 +47,26 @@
   }
 }
 
-@media only screen and (max-width: 1422px) {
-}
-
-@media only screen and (max-width: 1142px) {
-
-}
-
-@media only screen and (max-width: 842px) {
-
-}
-
 @media only screen and (max-width: 530px) {
-  .container{
-    height: fit-content;
+  .container {
+    line-height: 1.2em;
   }
 
   .wrapper{
-    width: 90%;
+    max-width: 80%;
+    margin: 5em auto;
+    flex-direction: column;
+      img{
+        display: none;
+      }
   }
 
-  .testimony{
-    display: block;
+  .text{
     width: 100%;
-
-    img{
-      border-radius: 10px 10px 10px 10px;
-      width: 100%;
+    margin: 0;
+    h1{
+      font-size: 3.7em;
+      color: #CE5D7B;
     }
-  }
-
-  .img p{
-    width: 100%;
   }
 }

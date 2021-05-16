@@ -1,4 +1,28 @@
 <div class="container">
-  <h1>SLIM FIT</h1>
-  <p>ProNatural©</p>
+  <img src="assets/footer-bg.jpg" alt="" class="footer-bg">
+
+  <div class="countdown">
+    <p>
+      Porosisni përpara mbarimit te orarit qe te perfitoni nga oferta
+    </p>
+    <countdown [config]="{leftTime: 86400000 - currTime}"></countdown>
+  </div>
+
+  <div class="wrapper">
+    <div>
+      <img src="assets/ulje2.png" alt="" class="ulje">
+    </div>
+    <div class="form">
+      <app-order-form></app-order-form>
+    </div>
+    <div class="shishja">
+      <img src="assets/shishja.png">
+    </div>
+  </div>
+
+  <div class="tags">
+    <h1>SLIM FIT</h1>
+    <p>ProNatural©</p>
+  </div>
+
 </div>
