@@ -43,7 +43,6 @@
     transform: scale(1.1);
     cursor: pointer;
   }
-
 }
 
 @media only screen and (max-width: 1422px) {
@@ -57,14 +56,32 @@
   .wrapper{
     text-align: center;
     margin: 0px;
-    padding: 7em 0;
+    padding: 6.9em 0;
     width: 100%;
-    background: linear-gradient(100deg, rgba(255,222,241,1) 0%, rgba(255,255,255,1) 100%);
+    background: white;
+    .l1{
+      font-size: 1.5em;
+      line-height: 1.2em;
+      font-weight: bold;
+      color: #E6D766;
+      font-family: "Nexa";
+    }
+    .l2{
+      font-size: 4.5em;
+      line-height: 1em;
+      font-weight: bold;
+      color: #28612B;
+      font-family: "Nexa";
+    }
+    .l3{
+      font-size: 1.5em;
+      line-height: 2em;
+      color: #28612B;
+    }
   }
 
   .permbajtja{
-    width: 80%;
-    display: flex;
+    width: 90%;
     flex-direction: column;
     justify-content: center;
     margin: 2em auto;

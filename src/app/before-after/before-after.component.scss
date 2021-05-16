@@ -27,6 +27,7 @@
 
 h1 {
   font-size: 2.5rem;
+  line-height: 1.2em;
   font-weight: bold;
   color: #28612B;
   font-family: "Nexa";
@@ -49,7 +50,8 @@ h1 {
   background-color: white;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: start;
+  height: fit-content;
   .text{
     padding: 20px;
   }
@@ -109,10 +111,47 @@ h1 {
     text-align: center;
   }
 
+  h1 {
+    font-size: 4.5em;
+  }
+
   .cards{
     display: flex;
     flex-direction: column;
     width: 100%;
     text-align: left;
+  }
+
+  .cards .case{
+    .name{
+      font-size: 2em;
+      font-weight: bold;
+      display: inline-block;
+    }
+    .age{
+      display: inline-block;
+      vertical-align:text-bottom;
+      font-size: 1em;
+      opacity: 0.7;
+      background-color: #28612B;
+      color: white;
+      font-family: "Nexa";
+      border-radius: 50px;
+      padding: 0px 10px;
+      margin: auto 10px;
+      justify-self: baseline;
+    }
+    .words{
+      font-size: 1rem;
+    }
+    p{
+      color: black;
+    }
+  }
+
+  .prof{
+    margin-top: 3em;
+    width: 77px;
+    height: 77px;
   }
 }
