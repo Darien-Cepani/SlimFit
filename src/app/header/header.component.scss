@@ -68,6 +68,7 @@ b{
   width: fit-content;
   img{
     width: 300px;
+    height: auto;
   }
 }
 
@@ -132,7 +133,7 @@ b{
   }
 }
 
-@media only screen and (max-width: 530px) {
+@media only screen and (max-width: 720px) {
   header {
     min-height: 2000px;
     height: 2000px;
