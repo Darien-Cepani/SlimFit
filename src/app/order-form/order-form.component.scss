@@ -2,6 +2,8 @@
   font-family: 'Nexa Light';
   padding: 1.5em;
     margin: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
   text-align: center;
   color: #28612B;
@@ -9,8 +11,12 @@
   border: 2px solid #28612B;
   border-radius: 20px;
   background-color: rgba(255,255,255,0.5);
-  backdrop-filter: blur(20px);
-  user-select: none;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 p{
@@ -22,12 +28,19 @@ p{
 
 .price{
   color: #28612B;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   margin: 1.5em auto;
   font-size: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: baseline;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .old-price{
@@ -54,9 +67,7 @@ p{
   border-color: red;
 
   -webkit-transform:rotate(-7deg);
-  -moz-transform:rotate(-7deg);
   -ms-transform:rotate(-7deg);
-  -o-transform:rotate(-7deg);
   transform:rotate(-7deg);
 }
 
@@ -74,6 +85,8 @@ p{
   border: 0px;
   width: 92%;
   color: black;
+  -webkit-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
   font-weight: bold;
   font-family: inherit;
@@ -97,6 +110,8 @@ select {
   border: 0px;
   width: 100%;
   color: #28612B;
+  -webkit-transition: all 250ms ease-in-out, border-radius 100ms ease-in-out;
+  -o-transition: all 250ms ease-in-out, border-radius 100ms ease-in-out;
   transition: all 250ms ease-in-out, border-radius 100ms ease-in-out;
   font-weight: bold;
   font-family: inherit;
@@ -114,6 +129,30 @@ select:active, select:focus{
   border-radius: 20px 20px 0 0;
 }
 
+.input::-webkit-input-placeholder{
+  color: #28612B;
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+.input::-moz-placeholder{
+  color: #28612B;
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+.input:-ms-input-placeholder{
+  color: #28612B;
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+.input::-ms-input-placeholder{
+  color: #28612B;
+  font-weight: bold;
+  opacity: 0.7;
+}
+
 .input::placeholder{
   color: #28612B;
   font-weight: bold;
@@ -121,8 +160,25 @@ select:active, select:focus{
 }
 
 input:hover, select:hover, textarea:hover{
-  box-shadow: inset 3px 3px 7px rgba(0,0,0,0.5);
+  -webkit-box-shadow: inset 3px 3px 7px rgba(0,0,0,0.5);
+          box-shadow: inset 3px 3px 7px rgba(0,0,0,0.5);
   background: white;
+  color: black;
+}
+
+.input:hover::-webkit-input-placeholder{
+  color: black;
+}
+
+.input:hover::-moz-placeholder{
+  color: black;
+}
+
+.input:hover:-ms-input-placeholder{
+  color: black;
+}
+
+.input:hover::-ms-input-placeholder{
   color: black;
 }
 
@@ -147,16 +203,20 @@ select:hover{
   font-size: 1.3rem;
   cursor: pointer;
   text-align: center;
+  -webkit-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
 }
 
 .button:hover, .button:focus{
-  box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
+          box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
   background: #fff187;
 }
 
 .button:active{
-  box-shadow: inset 3px 3px 7px rgba(0,0,0,0.5);
+  -webkit-box-shadow: inset 3px 3px 7px rgba(0,0,0,0.5);
+          box-shadow: inset 3px 3px 7px rgba(0,0,0,0.5);
   background: #E6D766;
   color: black;
 }
@@ -175,7 +235,9 @@ select:hover{
   .container{
     padding: 1.5em;
     margin: 2em auto;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     color: #6155a6;
     font-size: 20px;

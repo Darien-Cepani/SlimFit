@@ -15,7 +15,8 @@
  */
 
  html {
-  font-family: "Nexa Light"; /* 1 */
+  -webkit-font-family: "Nexa"; /* 1 */
+  font-family: "Nexa"; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -27,6 +28,7 @@
 body {
   font-family: "Nexa Light"; /* 1 */
   margin: 0;
+  min-height: 100vh;
 }
 
 /* HTML5 display definitions
@@ -218,8 +220,8 @@ figure {
  */
 
 hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   height: 0;
 }
 
@@ -342,7 +344,8 @@ input {
 
 input[type="checkbox"],
 input[type="radio"] {
-  box-sizing: border-box; /* 1 */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
 
@@ -365,7 +368,6 @@ input[type="number"]::-webkit-outer-spin-button {
 
 input[type="search"] {
   -webkit-appearance: textfield; /* 1 */
-  -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box; /* 2 */
   box-sizing: content-box;
 }

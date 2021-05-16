@@ -1,17 +1,27 @@
 .container{
   width: 100%;
   padding: 5em auto;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   font-family: "Nexa";
+  min-height: 1080px;
+  height: 1080px;
 }
 
 .wrapper{
   --accent-color: #6155a6;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 75%;
   margin: 5em auto;
-  flex-direction: column;
-  height: 90vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 850px;
   font-family: "Nexa";
 }
 
@@ -87,23 +97,32 @@
 }*/
 
 .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   text-align: center;
   font-weight: bold;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 100%;
   height: 30%;
   div{
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     margin: 1em;
+    -webkit-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
     transition: all 250ms ease-in-out;
     margin: auto;
   }
   img{
     width: 100px;
+    -webkit-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
     transition: all 250ms ease-in-out;
-    // filter: invert(180);
   }
   p{
     margin: 0;
@@ -113,33 +132,46 @@
 }
 
 .percentages{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   text-align: center;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 100%;
   height: 50%;
   margin-top: 5em;
   div{
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     margin: 1em;
+    -webkit-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
     transition: all 250ms ease-in-out;
     margin: auto;
   }
   div:hover{
     cursor: pointer;
     img{
-      transform: scale(1.1);
-      box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+      -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+              transform: scale(1.1);
+      -webkit-box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+              box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
     }
   }
   img{
     width: 250px;
+    -webkit-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
     transition: all 250ms ease-in-out;
-    box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
+            box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
     border-radius: 20px;
     z-index: 100;
-    // filter: invert(180);
   }
   p{
     font-size: 2em;
@@ -165,7 +197,8 @@
 @media only screen and (max-width: 530px) {
   .container{
     width: 100%;
-    height: 300vh;
+    min-height: 2500px;
+    height: 2500px;
     background: white;
   }
 
@@ -176,7 +209,9 @@
   }
 
   .cards{
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
   }
 
@@ -188,20 +223,29 @@
     }
 
   .cards {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     width: 70%;
     margin: 0 auto;
     div{
       margin: 1em auto;
+      -webkit-transition: all 250ms ease-in-out;
+      -o-transition: all 250ms ease-in-out;
       transition: all 250ms ease-in-out;
     }
     img{
       width: 100px;
+      -webkit-transition: all 250ms ease-in-out;
+      -o-transition: all 250ms ease-in-out;
       transition: all 250ms ease-in-out;
-      // filter: invert(180);
+
     }
     p{
       margin: 0;
@@ -211,6 +255,8 @@
   }
 
   .percentages{
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     margin-top: 5em;
     div{

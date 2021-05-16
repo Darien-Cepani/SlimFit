@@ -1,19 +1,30 @@
 .container {
   background-size: cover;
   background-repeat: no-repeat;
-  height: fit-content;
+  min-height: 750px;
+  height: 780px;
   color: #28612B;
   line-height: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .background-pattern{
   position: absolute;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   top: 0;
   left: 0;
   z-index: -100;
@@ -37,20 +48,36 @@ h1 {
 .cards{
   width: 100%;
   margin: 5em auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: black;
 }
 
 .cards .case{
-  box-shadow: 3px 3px 7px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 3px 3px 7px rgba(0,0,0,0.5);
+          box-shadow: 3px 3px 7px rgba(0,0,0,0.5);
   border-radius: 0px 10px 10px 10px;
   margin: 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
+  -webkit-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
   background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   .text{
     padding: 20px;
@@ -102,7 +129,8 @@ h1 {
 
 @media only screen and (max-width: 530px) {
   .container{
-    height: fit-content;
+    min-height: 2000px;
+    height: 2000px;
   }
 
   .wrapper{
@@ -116,8 +144,13 @@ h1 {
   }
 
   .cards{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
     text-align: left;
   }

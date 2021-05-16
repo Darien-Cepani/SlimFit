@@ -3,22 +3,32 @@
   width: 100%;
   color: #6155a6;
   z-index: 100;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   position: relative;
 
   .footer-bg{
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -100;
     width: 100%;
+    height: 100%;
   }
 }
 
 .countdown{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   text-align: center;
   margin-bottom: 7em;
   background-color: #fff;
@@ -47,10 +57,18 @@
 .wrapper{
   margin: 0 auto;
   width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .ulje{
@@ -72,11 +90,18 @@
   font-family: "Nexa";
   margin-top: 2em;
   padding: 1.2em 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: #28612B;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: white;
 
   h1{
@@ -94,6 +119,8 @@
 @media only screen and (max-width: 530px) {
 
   .container{
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(220,126,163,1)), color-stop(25%, rgba(201,115,102,1)), color-stop(50%, rgba(183,170,35,1)), color-stop(75%, rgba(98,130,48,1)), to(rgba(25,98,54,1)));
+    background: -o-linear-gradient(top, rgba(220,126,163,1) 0%, rgba(201,115,102,1) 25%, rgba(183,170,35,1) 50%, rgba(98,130,48,1) 75%, rgba(25,98,54,1) 100%);
     background: linear-gradient(180deg, rgba(220,126,163,1) 0%, rgba(201,115,102,1) 25%, rgba(183,170,35,1) 50%, rgba(98,130,48,1) 75%, rgba(25,98,54,1) 100%);
   }
 
@@ -102,14 +129,20 @@
   }
 
   .countdown{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     text-align: center;
     margin-bottom: 7em;
     background-color: #fff;
 
     countdown{
-      align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
       width: 50%;
       padding: 1em 0.2em;
       font-size: 2.5em;
@@ -124,7 +157,10 @@
   .wrapper{
     margin: 0 auto;
     width: 80%;
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     position: relative;
   }
 
@@ -151,11 +187,18 @@
     font-family: "Nexa";
     margin-top: 2em;
     padding: 1.2em 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     color: #28612B;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background: white;
 
     h1{

@@ -1,28 +1,44 @@
 header {
+  display: block;
   font-family: 'Nexa Light';
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+  min-height: 900px;
+  height: 100vh;
   color: #28612B;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   border-bottom: 1.5em solid #28612B;
 }
 
 .header-bg{
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   top: 0;
   left: 0;
   z-index: -100;
-  width: 100%;
+  width: 100vw;
 }
 
 .wrapper{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 75%;
   position: absolute;
   top: 17%;
@@ -44,7 +60,11 @@ b{
 .left{
   width: 30%;
   margin: auto 0em;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   img{
     width: 300px;
@@ -114,11 +134,19 @@ b{
 
 @media only screen and (max-width: 530px) {
   header {
-    height: 240vh;
+    min-height: 2000px;
+    height: 2000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     border-bottom: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(220,126,163,1)), color-stop(25%, rgba(201,115,102,1)), color-stop(50%, rgba(183,170,35,1)), color-stop(75%, rgba(98,130,48,1)), to(rgba(25,98,54,1)));
+    background: -o-linear-gradient(top, rgba(220,126,163,1) 0%, rgba(201,115,102,1) 25%, rgba(183,170,35,1) 50%, rgba(98,130,48,1) 75%, rgba(25,98,54,1) 100%);
     background: linear-gradient(180deg, rgba(220,126,163,1) 0%, rgba(201,115,102,1) 25%, rgba(183,170,35,1) 50%, rgba(98,130,48,1) 75%, rgba(25,98,54,1) 100%);
   }
 
@@ -127,9 +155,13 @@ b{
   }
 
   .wrapper{
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: auto;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: 90%;
     top: 2em;
     left: 0;
@@ -151,7 +183,11 @@ b{
   .left{
     width: 100%;
     margin: 0em;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     margin: 0 auto;
     img{

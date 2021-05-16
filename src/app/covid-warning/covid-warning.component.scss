@@ -4,6 +4,10 @@ p{
   color: black;
   background-color: #E6D766;
   text-align: center;
+  position: -webkit-sticky;
   position: sticky;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
