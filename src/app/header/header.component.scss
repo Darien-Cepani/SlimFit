@@ -137,7 +137,7 @@ b{
   header {
     min-height: 2000px;
     height: 2000px;
-    display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     position: relative;
@@ -193,6 +193,7 @@ b{
     margin: 0 auto;
     img{
       width: 250px;
+      height: 450px;
     }
   }
 

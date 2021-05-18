@@ -191,10 +191,10 @@ select:hover{
 }
 
 .button{
-  font-family: "Nexa Bold";
+  font-family: "Nexa Bold" !important;
   width: 100%;
-  border: 0;
-  background-color: #E6D766;
+  border: 0 !important;
+  background-color: #E6D766 !important;
   color: black;
   padding: 1em 1.5em;
   margin: 0.5em 0px;
@@ -211,13 +211,13 @@ select:hover{
 .button:hover, .button:focus{
   -webkit-box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
           box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
-  background: #fff187;
+  background: #fff187 !important;
 }
 
 .button:active{
   -webkit-box-shadow: inset 3px 3px 7px rgba(0,0,0,0.5);
           box-shadow: inset 3px 3px 7px rgba(0,0,0,0.5);
-  background: #E6D766;
+  background: #E6D766 !important;
   color: black;
 }
 
