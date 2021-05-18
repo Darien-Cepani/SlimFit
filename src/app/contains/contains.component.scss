@@ -1,8 +1,8 @@
 .wrapper{
+  font-family: "Nexa" !important;
   margin: 5em auto;
-  width: 75%;
+  width: 80%;
   text-align: center;
-  font-family: "Nexa";
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -12,20 +12,17 @@
     line-height: 0.7em;
     font-weight: bold;
     color: #E6D766;
-    font-family: "Nexa";
   }
   .l2{
     font-size: 7em;
     line-height: 0.7em;
     font-weight: bold;
     color: #28612B;
-    font-family: "Nexa";
   }
   .l3{
     font-size: 1.5em;
     line-height: 2em;
     color: #28612B;
-    font-family: "Nexa";
   }
 }
 
@@ -56,62 +53,80 @@
   }
 }
 
-@media only screen and (max-width: 1422px) {
-}
-
-@media only screen and (max-width: 1142px) {
-
-}
-
-@media only screen and (max-width: 720px) {
+@media screen and (min-width: 1056px)  and (max-width: 1585px) {
   .wrapper{
-    text-align: center;
-    margin: 0px;
-    padding: 6.9em 0;
-    width: 100%;
-    background: white;
     .l1{
-      font-size: 1.5em;
-      line-height: 1.2em;
+      font-size: 2em;
+      line-height: 0.7em;
       font-weight: bold;
       color: #E6D766;
       font-family: "Nexa";
     }
     .l2{
-      font-size: 4.5em;
-      line-height: 1em;
+      font-size: 5.5em;
+      line-height: 0.7em;
       font-weight: bold;
       color: #28612B;
       font-family: "Nexa";
     }
     .l3{
-      font-size: 1em;
-      line-height: 2em;
+      font-size: 1.5em;
+      line-height: 1.2em;
       color: #28612B;
       font-family: "Nexa";
     }
   }
 
   .permbajtja{
-    width: 90%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 2em auto;
+    width: 100%;
     .perberes{
-      margin: 10px auto;
-      width: 80%;
-      opacity: 0.9;
-      -webkit-transition: all 250ms ease-in-out;
-      -o-transition: all 250ms ease-in-out;
-      transition: all 250ms ease-in-out;
+      width: 150px;
       img{
-        width: 60%;
+        width: 100%;
       }
     }
   }
+}
+
+
+@media screen and (max-width: 1055px) {
+.wrapper{
+  font-family: "Nexa";
+  text-align: center;
+  margin: 4em auto;
+  width: 100%;
+  background: white;
+  .l1{
+    font-size: 2em;
+    line-height: 1.2em;
+  }
+  .l2{
+    font-size: 4.5em;
+    line-height: 1em;
+  }
+  .l3{
+    font-size: 1.5em;
+    line-height: 1.2em;
+  }
+}
+
+.permbajtja{
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 3em auto;
+  .perberes{
+    margin: 1.5em auto;
+    width: 150px;
+    opacity: 0.9;
+    -webkit-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+    img{
+      width: 100%;
+    }
+  }
+}
 }

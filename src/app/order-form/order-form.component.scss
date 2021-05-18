@@ -1,13 +1,13 @@
 .container{
-  font-family: 'Nexa Light';
+  min-width: 300px;
+  font-family: 'Nexa' !important;
   padding: 1.5em;
-    margin: 0;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+  margin: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   text-align: center;
   color: #28612B;
-  font-size: 25px;
   border: 2px solid #28612B;
   border-radius: 20px;
   background-color: rgba(255,255,255,0.5);
@@ -19,20 +19,12 @@
           user-select: none;
 }
 
-p{
-  font-size: 1em;
-  line-height: 1.5;
-  margin: 1em 0;
-  font-weight: bold;
-}
-
 .price{
   color: #28612B;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 1.5em auto;
-  font-size: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,13 +36,13 @@ p{
 }
 
 .old-price{
-  font-size: 1.5em;
-  margin-right: 0.25em;
+  font-size: 2em;
+  margin-right: 0.3em;
 }
 
 .new-price{
-  font-family: "Nexa Bold";
-  font-size: 2em;
+  font-weight: bold;
+  font-size: 3em;
 }
 
 .strikethrough{
@@ -65,98 +57,68 @@ p{
   right: 0;
   border-top: 0.08em solid;
   border-color: red;
-
-  -webkit-transform:rotate(-7deg);
-  -ms-transform:rotate(-7deg);
-  transform:rotate(-7deg);
+  -webkit-transform:rotate(-10deg);
+  -ms-transform:rotate(-10deg);
+  transform:rotate(-10deg);
 }
 
-.input{
-  padding: 20px 10px 20px 20px;
+input{
+  padding: 1.5em;
+  margin: 0.5em auto;
   background-color: #eee;
   text-decoration: none;
-  margin: 0.6em 0px;
   border-radius: 15px;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   -o-appearance: none;
   text-align: left;
-  border: 0px;
-  width: 92%;
-  color: black;
+  border: 0;
+  width: 85%;
   -webkit-transition: all 250ms ease-in-out;
   -o-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
-  font-weight: bold;
   font-family: inherit;
-  font-size: 0.8em;
+  font-size: 1.2em;
   cursor: inherit;
   line-height: inherit;
   outline: none;
 }
 
 select {
-  padding: 20px 10px 20px 20px;
+  padding: 1.5em;
+  margin: 0.5em auto;
   background-color: #eee;
   text-decoration: none;
-  margin: 0.6em 0px;
   border-radius: 15px;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   -o-appearance: none;
   text-align: left;
-  border: 0px;
+  border: 0;
   width: 100%;
-  color: #28612B;
-  -webkit-transition: all 250ms ease-in-out, border-radius 100ms ease-in-out;
-  -o-transition: all 250ms ease-in-out, border-radius 100ms ease-in-out;
-  transition: all 250ms ease-in-out, border-radius 100ms ease-in-out;
-  font-weight: bold;
+  -webkit-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
   font-family: inherit;
-  font-size: 0.8em;
+  font-size: 1.2em;
   cursor: inherit;
+  font-weight: bold;
   line-height: inherit;
   outline: none;
+  color: #28612B;
 }
 
-select:active, select:focus{
+select:active, select:focus, .input:active, .input:focus{
   border-radius: 20px 20px 0 0;
 }
 
-.input:active, .input:focus{
-  border-radius: 20px 20px 0 0;
-}
-
-.input::-webkit-input-placeholder{
+input::placeholder, select::placeholder{
   color: #28612B;
   font-weight: bold;
   opacity: 0.7;
-}
-
-.input::-moz-placeholder{
-  color: #28612B;
-  font-weight: bold;
-  opacity: 0.7;
-}
-
-.input:-ms-input-placeholder{
-  color: #28612B;
-  font-weight: bold;
-  opacity: 0.7;
-}
-
-.input::-ms-input-placeholder{
-  color: #28612B;
-  font-weight: bold;
-  opacity: 0.7;
-}
-
-.input::placeholder{
-  color: #28612B;
-  font-weight: bold;
-  opacity: 0.7;
+  transition: all 250ms ease-in-out;
 }
 
 input:hover, select:hover, textarea:hover{
@@ -166,50 +128,35 @@ input:hover, select:hover, textarea:hover{
   color: black;
 }
 
-.input:hover::-webkit-input-placeholder{
-  color: black;
-}
-
-.input:hover::-moz-placeholder{
-  color: black;
-}
-
-.input:hover:-ms-input-placeholder{
-  color: black;
-}
-
-.input:hover::-ms-input-placeholder{
-  color: black;
+select:hover{
+  cursor: pointer;
 }
 
 .input:hover::placeholder{
   color: black;
 }
 
-select:hover{
-  cursor: pointer;
-}
-
 .button{
   -webkit-border-radius:0;
+  border-radius:0;
   -webkit-appearance: none;
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
 }
 
 .button{
-  font-family: "Nexa Bold" !important;
+  font-family: "Nexa";
   width: 100%;
-  border: 0 !important;
-  background-color: #E6D766 !important;
+  border: 0;
+  background-color: #E6D766;
   color: black;
   padding: 1em 1.5em;
-  margin: 0.5em 0px;
+  margin: 0.5em auto;
   border-radius: 15px;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.7em;
   cursor: pointer;
   text-align: center;
   -webkit-transition: all 250ms ease-in-out;
@@ -227,36 +174,22 @@ select:hover{
   -webkit-box-shadow: inset 3px 3px 7px rgba(0,0,0,0.5);
           box-shadow: inset 3px 3px 7px rgba(0,0,0,0.5);
   background: #E6D766 !important;
-  color: black;
 }
 
 .zbritje{
   font-weight: bold;
-  font-size: 0.8em;
+  font-size: 1.2em;
+  margin: 1em auto;
   color: #28612B;
 }
 
-@media only screen and (max-width: 720px) {
-  .container{
-    padding: 1.5em;
-    margin: 2em auto;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    color: #6155a6;
-    font-size: 20px;
+@media screen and (min-width: 1056px)  and (max-width: 1585px) {
+
+}
+
+@media screen and (max-width: 1055px) {
+  select:active, select:focus, .input:active, .input:focus{
+    border-radius: 15px;
   }
 
-  .countdown{
-    text-align: center;
-    background-color: red;
-    border-radius: 50px;
-    padding: 30px 10px;
-    margin: 0 auto;
-    width: 90%;
-    font-size: 2.3em;
-    color: white;
-    font-weight: bold;
-  }
 }

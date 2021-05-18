@@ -1,10 +1,9 @@
 .container {
-  line-height: 2em;
   min-height: 700px;
     height: 700px;
   width: 100%;
-  font-family: "Nexa";
-  border-bottom: 3em solid #CE5D7B;
+  font-family: "Nexa" !important;
+  border-bottom: 2em solid #CE5D7B;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -12,9 +11,9 @@
 }
 
 .wrapper{
-  width: 70%;
+  width: 80%;
   height: 100%;
-  margin: 5em auto;
+  margin: 7em auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,31 +32,32 @@
   z-index: 100;
   .testimony{
     border: 2px solid #28612B;
-    padding: 1em;
+    padding: 2em;
     border-radius: 20px;
     width: 100%;
     p{
-      font-size: 1.15em;
+      font-size: 1.33em;
+      line-height: 1.2em;
     }
     .button{
-      font-family: "Nexa Bold";
+      font-family: "Nexa";
+      width: 100%;
       border: 0;
       background-color: #E6D766;
       color: black;
       padding: 1em 1.5em;
-      margin: 0.5em 0px;
+      margin: 0.5em auto;
       border-radius: 15px;
       font-weight: bold;
-      font-size: 1.3rem;
+      font-size: 1.7em;
       cursor: pointer;
       text-align: center;
       -webkit-transition: all 250ms ease-in-out;
       -o-transition: all 250ms ease-in-out;
       transition: all 250ms ease-in-out;
       position: absolute;
-      right: -6em;
-      bottom: 0.5em;
-      width: 13em;
+      margin: 0 auto;
+      bottom: 1em;
       z-index: 100;
     }
     .button:hover, .button:focus{

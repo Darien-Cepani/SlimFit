@@ -3,7 +3,7 @@ header {
   font-family: 'Nexa Light';
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 900px;
+  min-height: 800px;
   height: 100vh;
   color: #28612B;
   display: -webkit-box;
@@ -39,18 +39,20 @@ header {
   height: fit-content;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 75%;
+  width: 80%;
   position: absolute;
-  top: 17%;
-  left: 13.5%;
-  right: 13.5%;
+  top: 15%;
+  left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .ulje{
   position: absolute;
-  width: 10em;
+  width: 8em;
   top: 4%;
   right: 4%;
+  z-index: 100;
 }
 
 b{
@@ -58,7 +60,7 @@ b{
 }
 
 .left{
-  width: 30%;
+  width: fit-content;
   margin: auto 0em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,7 +75,7 @@ b{
 }
 
 .middle{
-  width: 35%;
+  width: fit-content;
   .countdown{
     text-align: center;
     margin: 0em 0 2em 0;
@@ -83,7 +85,7 @@ b{
     min-width: 100%;
     padding: 0.5em 1em;
     color: white;
-    font-size: 2.5rem;
+    font-size: 3.5em;
     border-radius: 15px;
     margin: 2em auto;
     }
@@ -126,14 +128,58 @@ b{
   margin: auto 0em;
 }
 
-@media only screen and (max-width: 1585px) {
-  .middle .motto{
-    font-size: 3.5em;
-    margin: 1.2em 0 0.7em 0;
+@media screen and (min-width: 1056px)  and (max-width: 1585px) {
+
+  .wrapper{
+    position: absolute;
+    top: 18%;
+  }
+
+  .ulje{
+    position: absolute;
+    width: 8em;
+    top: 2%;
+    right: 1%;
+  }
+
+  .left{
+    margin: auto 0em;
+    img{
+      width: 250px;
+      height: 459px;
+    }
+  }
+
+  .middle{
+    margin: auto 0em;
+    .countdown{
+      countdown{
+        font-size: 3em;
+      }
+      p{
+        margin-bottom: 3em;
+      }
+    }
+    .motto{
+      font-size: 3em;
+      margin: 1.3em 0 0.7em 0;
+      line-height: 1.2em;
+    }
+    .list{
+      width: 80%;
+    }
+    p{
+      color: black;
+      font-size: 1.5em;
+    }
+  }
+
+  .right{
+    width: 30%;
   }
 }
 
-@media only screen and (max-width: 720px) {
+@media screen and (max-width: 1055px) {
   header {
     min-height: 2000px;
     height: 2000px;
@@ -232,8 +278,8 @@ b{
   }
 
   .right{
-    width: 100%;
-    margin: auto 0;
+    width: 90%;
+    margin: 3em auto 0 auto;
     padding: 0px;
   }
 }
