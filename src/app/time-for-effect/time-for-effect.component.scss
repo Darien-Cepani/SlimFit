@@ -1,8 +1,7 @@
 .container {
-  line-height: 2em;
-  min-height: 1080px;
-  height: 1080px;
-  font-family: "Nexa";
+  min-height: 1000px;
+  height: 1000px;
+  font-family: "Nexa" !important;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -10,9 +9,8 @@
 }
 
 .wrapper{
-  max-width: 100%;
   height: 100%;
-  margin: 10em auto;
+  margin: 15em auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,15 +56,22 @@
   }
 }
 
+@media only screen and (min-width: 720px) and (max-width: 1275px){
+  .wrapper{
+    margin: 5em auto;
+  }
+}
+
 @media only screen and (max-width: 720px) {
-  .container {
-    line-height: 1.2em;
-    height: 500px;
+
+  .container{
+    height: fit-content;
   }
 
   .wrapper{
-    max-width: 80%;
-    margin: 5em auto;
+    border: 2px solid red;
+    max-width: 90%;
+    margin: 0em auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

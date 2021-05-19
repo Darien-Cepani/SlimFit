@@ -1,4 +1,5 @@
 .container{
+  font-family: 'Nexa' !important;
   background: white;
   width: 100%;
   color: #6155a6;
@@ -29,12 +30,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+          align-items: center;
   text-align: center;
-  margin-bottom: 7em;
   background-color: #fff;
 
   countdown{
-    font-family: 'Nexa Bold';
+    font-weight: bold;
     background-color: #D66378;
     width: 20%;
     padding: 0.7em 0.2em;
@@ -43,20 +44,20 @@
   }
 
   p{
-    font-family: 'Nexa Bold';
+    font-weight: bold;
     width: 80%;
     margin: 0 auto;
     text-align: center;
     color: #28612B;
-    font-size: 2.5em;
-    margin: 1em auto;
+    font-size: 2.1em;
+    line-height: 1.2em;
     text-transform: uppercase;
   }
 }
 
 .wrapper{
-  margin: 0 auto;
-  width: 70%;
+  margin: 2em auto;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,16 +84,13 @@
 }
 
 .shishja img{
-  width: 350px;
+  width: 320px;
 }
 
 .tags{
   font-family: "Nexa";
   margin-top: 2em;
   padding: 1.2em 0;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,20 +101,25 @@
       -ms-flex-align: center;
           align-items: center;
   background: white;
-
   h1{
     font-family: "Nexa Bold";
     margin: 0;
   }
-
   p{
     font-weight: bold;
     margin: 0;
   }
-
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (min-width: 1112px) and (max-width: 1472){
+  .countdown{
+    p{
+      font-size: 1em;
+    }
+  }
+}
+
+@media only screen and (max-width: 1112px) {
 
   .container{
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(220,126,163,1)), color-stop(25%, rgba(201,115,102,1)), color-stop(50%, rgba(183,170,35,1)), color-stop(75%, rgba(98,130,48,1)), to(rgba(25,98,54,1)));
