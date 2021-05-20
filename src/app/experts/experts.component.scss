@@ -100,11 +100,10 @@
 
 .doctor{
   width: 70%;
-  min-width: 55em;
+  min-width: 45em;
   position: absolute;
   bottom: 0;
   right: 10%;
-  margin-top: 5em;
   z-index: 1;
 }
 
@@ -145,7 +144,7 @@
   }
 
   .wrapper{
-    margin: 33em auto;
+    margin: 5em auto 25em auto;
     width: 90%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -183,6 +182,7 @@
   }
 
   .doctor{
+    width: 20%;
     right: 0%;
   }
 }
