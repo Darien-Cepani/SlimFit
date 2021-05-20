@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .wrapper{
   font-family: "Nexa" !important;
   margin: 5em auto;
@@ -114,9 +121,14 @@
 
 .permbajtja{
   width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   margin: 3em auto;
   .perberes{
     margin: 1.5em;

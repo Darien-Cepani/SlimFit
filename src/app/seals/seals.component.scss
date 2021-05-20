@@ -1,8 +1,19 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .container{
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   padding: 1px;
   margin-bottom: 10em;
   font-family: "Nexa" !important;
+  background: -o-linear-gradient(58deg, rgba(40,11,11,1) 0%, rgba(120,33,33,1) 40%, rgba(211,95,95,1) 100%);
   background: linear-gradient(32deg, rgba(40,11,11,1) 0%, rgba(120,33,33,1) 40%, rgba(211,95,95,1) 100%);
 }
 
@@ -10,9 +21,15 @@
   border-radius: 20px;
   padding: 1em;
   font-family: "Nexa" !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 80%;
   margin: 5em auto;
 }
@@ -37,10 +54,17 @@
   }
 
   .wrapper{
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 65%;
   }
 

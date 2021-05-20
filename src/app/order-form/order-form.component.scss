@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .container{
   min-width: 300px;
   font-family: 'Nexa' !important;
@@ -114,10 +121,44 @@ select:active, select:focus, .input:active, .input:focus{
   border-radius: 20px 20px 0 0;
 }
 
+input::-webkit-input-placeholder, select::-webkit-input-placeholder{
+  color: #28612B;
+  font-weight: bold;
+  opacity: 0.7;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+input::-moz-placeholder, select::-moz-placeholder{
+  color: #28612B;
+  font-weight: bold;
+  opacity: 0.7;
+  -moz-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+input:-ms-input-placeholder, select:-ms-input-placeholder{
+  color: #28612B;
+  font-weight: bold;
+  opacity: 0.7;
+  -ms-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+input::-ms-input-placeholder, select::-ms-input-placeholder{
+  color: #28612B;
+  font-weight: bold;
+  opacity: 0.7;
+  -ms-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
 input::placeholder, select::placeholder{
   color: #28612B;
   font-weight: bold;
   opacity: 0.7;
+  -webkit-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
 }
 
@@ -132,12 +173,27 @@ select:hover{
   cursor: pointer;
 }
 
+.input:hover::-webkit-input-placeholder{
+  color: black;
+}
+
+.input:hover::-moz-placeholder{
+  color: black;
+}
+
+.input:hover:-ms-input-placeholder{
+  color: black;
+}
+
+.input:hover::-ms-input-placeholder{
+  color: black;
+}
+
 .input:hover::placeholder{
   color: black;
 }
 
 .button{
-  -webkit-border-radius:0;
   border-radius:0;
   -webkit-appearance: none;
   font-family: inherit;

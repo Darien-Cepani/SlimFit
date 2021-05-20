@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .container{
   font-family: 'Nexa' !important;
   background: white;
@@ -30,7 +37,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-          align-items: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
   text-align: center;
   background-color: #fff;
 
@@ -122,8 +131,8 @@
 @media only screen and (max-width: 1112px) {
 
   .container{
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(220,126,163,1)), color-stop(25%, rgba(201,115,102,1)), color-stop(50%, rgba(183,170,35,1)), color-stop(75%, rgba(98,130,48,1)), to(rgba(25,98,54,1)));
     background: -o-linear-gradient(top, rgba(220,126,163,1) 0%, rgba(201,115,102,1) 25%, rgba(183,170,35,1) 50%, rgba(98,130,48,1) 75%, rgba(25,98,54,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(220,126,163,1)), color-stop(25%, rgba(201,115,102,1)), color-stop(50%, rgba(183,170,35,1)), color-stop(75%, rgba(98,130,48,1)), to(rgba(25,98,54,1)));
     background: linear-gradient(180deg, rgba(220,126,163,1) 0%, rgba(201,115,102,1) 25%, rgba(183,170,35,1) 50%, rgba(98,130,48,1) 75%, rgba(25,98,54,1) 100%);
   }
 

@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 header {
   font-family: "Nexa" !important;
   display: block;
@@ -75,6 +82,8 @@ b{
 }
 
 .middle{
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   .countdown{
     text-align: center;
@@ -183,8 +192,8 @@ b{
   header {
     min-height: 2000px;
     height: 2000px;
-    display: -webkit-flex;
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
     position: relative;
     -webkit-user-select: none;
@@ -192,8 +201,8 @@ b{
         -ms-user-select: none;
             user-select: none;
     border-bottom: none;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(220,126,163,1)), color-stop(25%, rgba(201,115,102,1)), color-stop(50%, rgba(183,170,35,1)), color-stop(75%, rgba(98,130,48,1)), to(rgba(25,98,54,1)));
     background: -o-linear-gradient(top, rgba(220,126,163,1) 0%, rgba(201,115,102,1) 25%, rgba(183,170,35,1) 50%, rgba(98,130,48,1) 75%, rgba(25,98,54,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(220,126,163,1)), color-stop(25%, rgba(201,115,102,1)), color-stop(50%, rgba(183,170,35,1)), color-stop(75%, rgba(98,130,48,1)), to(rgba(25,98,54,1)));
     background: linear-gradient(180deg, rgba(220,126,163,1) 0%, rgba(201,115,102,1) 25%, rgba(183,170,35,1) 50%, rgba(98,130,48,1) 75%, rgba(25,98,54,1) 100%);
   }
 
