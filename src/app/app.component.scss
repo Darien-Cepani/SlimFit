@@ -2,11 +2,13 @@
 @font-face {
   font-family: 'Nexa Light';
   src: url('../assets/fonts/Nexa Light.otf') format('opentype');
+  src: url('../assets/fonts/Nexa Light ttf.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Nexa Bold';
   src: url('../assets/fonts/Nexa Bold.otf') format('opentype');
+  src: url('../assets/fonts/Nexa Bold ttf.ttf') format('truetype');
 }
 /**
  * 1. Set default font family to sans-serif.
