@@ -23,16 +23,11 @@
  *    user zoom.
  */
 
- *{
-  background-color: white;
- }
-
  html {
   -webkit-font-family: "Nexa" !important; /* 1 */
   font-family: "Nexa" !important; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
-  background-color: white;
 }
 
 /**
@@ -43,7 +38,6 @@ body {
   font-family: "Nexa Light"; /* 1 */
   margin: 0;
   min-height: 100vh;
-  background-color: white;
 }
 
 /* HTML5 display definitions

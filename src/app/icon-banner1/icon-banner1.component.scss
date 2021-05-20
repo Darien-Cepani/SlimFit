@@ -6,6 +6,7 @@
 */
 
 .container{
+  border: 2px solid red;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -15,6 +16,7 @@
 }
 
 .wrapper{
+  border: 2px solid red;
   border-top: 1em solid rgba(202,95,122,0.8);
   border-bottom: 1em solid rgba(202,95,122,0.8);
   background-color: white;

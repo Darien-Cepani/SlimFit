@@ -4,8 +4,14 @@
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
+.container {
+  border: 2px solid red;
+  font-family: "Nexa" !important;
+  color: #28612B;
+}
 
 .wrapper{
+  border: 2px solid red;
   font-family: "Nexa" !important;
   margin: 5em auto;
   width: 80%;

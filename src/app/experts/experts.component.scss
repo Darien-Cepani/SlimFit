@@ -6,22 +6,23 @@
 */
 
 .container {
+  border: 2px solid red;
   background: white;
   font-family: "Nexa" !important;
-  min-height: 700px;
-    height: 700px;
   width: 100%;
   border-bottom: 2em solid #CE5D7B;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+          position: relative;
 }
 
 .wrapper{
+  border: 2px solid red;
   width: 80%;
   height: 100%;
-  margin: 7em auto;
+  margin: 15em auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,7 +38,7 @@
 .left{
   position: relative;
   width: 40%;
-  z-index: 100;
+  z-index: 2;
   .testimony{
     border: 2px solid #28612B;
     padding: 2em;
@@ -65,8 +66,7 @@
       transition: all 250ms ease-in-out;
       position: absolute;
       left: 7em;
-      margin: 0 auto;
-      bottom: 1em;
+      bottom: -6em;
       z-index: 100;
     }
     .button:hover, .button:focus{
@@ -84,6 +84,7 @@
 }
 
 .right{
+  z-index: 2;
   position: relative;
   text-align: right;
   width: 80%;
@@ -95,14 +96,16 @@
     color: #28612B;
     z-index: 100;
   }
-  .doctor{
-    width: 135%;
-    min-width: 55em;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-  }
+}
+
+.doctor{
+  width: 70%;
+  min-width: 55em;
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  margin-top: 5em;
+  z-index: 1;
 }
 
 @media screen and (min-width: 1346px)  and (max-width: 1585px) {
@@ -131,14 +134,6 @@
       color: #28612B;
       z-index: 100;
     }
-    .doctor{
-      width: 135%;
-      min-width: 55em;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      z-index: -1;
-    }
   }
 }
 
@@ -150,6 +145,7 @@
   }
 
   .wrapper{
+    margin: 33em auto;
     width: 90%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -184,8 +180,9 @@
       font-family: "Nexa Bold";
       color: #28612B;
     }
-    .doctor{
-      display: none
-    }
+  }
+
+  .doctor{
+    right: 0%;
   }
 }
