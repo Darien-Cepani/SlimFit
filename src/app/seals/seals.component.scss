@@ -33,10 +33,11 @@
 
 @media screen and (max-width: 1010px) {
   .container{
-    margin-bottom: 0;
+    margin: 5em 0;
   }
 
   .wrapper{
+    height: fit-content;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
