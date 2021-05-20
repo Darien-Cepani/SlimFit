@@ -8,26 +8,23 @@
 .container{
   background-color: white;
   font-family: "Nexa" !important;
-  margin: 5em auto;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  min-height: 900px;
-  height: 900px;
+  height: fit-content;
 }
 
 .wrapper{
+  margin: 5em auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 80%;
-  margin: 0 auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
 }
 
 .top{
@@ -117,12 +114,6 @@
 }
 
 @media screen and (min-width: 1146px) and (max-width: 1392px) {
-
-  .container{
-    min-height: 1200px;
-    height: 1200px;
-  }
-
   .top{
     h1{
       font-size: 5em;
@@ -154,10 +145,6 @@
 
 
 @media screen and (max-width: 1145px) {
-  .container{
-    min-height: 2300px;
-    height: 2300px;
-  }
 
   .wrapper{
     width: 90%;

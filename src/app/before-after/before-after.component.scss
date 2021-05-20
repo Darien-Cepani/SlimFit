@@ -6,6 +6,7 @@
 */
 
 .container {
+  background-color: white;
   font-family: "Nexa" !important;
   color: #28612B;
   display: -webkit-box;
@@ -25,6 +26,7 @@
 }
 
 .wrapper{
+  margin: 10em auto;
   width: 90%;
 }
 
@@ -138,14 +140,10 @@ h1 {
 }
 
 @media only screen and (max-width: 720px) {
-  .container{
-    min-height: 2000px;
-    height: 2000px;
-  }
 
   .wrapper{
     width: 90%;
-    margin: 5em 0;
+    margin: 10em 0;
     text-align: center;
   }
 
