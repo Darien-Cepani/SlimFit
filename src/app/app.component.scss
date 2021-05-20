@@ -21,8 +21,8 @@
  }
 
  html {
-  -webkit-font-family: "Nexa"; /* 1 */
-  font-family: "Nexa"; /* 1 */
+  -webkit-font-family: "Nexa" !important; /* 1 */
+  font-family: "Nexa" !important; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
   background-color: white;

@@ -1,16 +1,16 @@
 .container{
+  background-color: white;
+  font-family: "Nexa" !important;
   margin: 5em auto;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  font-family: "Nexa" !important;
   min-height: 900px;
   height: 900px;
 }
 
 .wrapper{
-  font-family: "Nexa" !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,12 +60,10 @@
   p{
     margin: 0;
     font-size: 1.5em;
-    font-family: "Nexa Light";
   }
 }
 
 .percentages{
-  font-family: "Nexa" !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -1,6 +1,6 @@
 header {
+  font-family: "Nexa" !important;
   display: block;
-  font-family: 'Nexa Light';
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 800px;
@@ -56,7 +56,7 @@ header {
 }
 
 b{
-  font-family: 'Nexa Bold';
+  font-weight: bold;
 }
 
 .left{
@@ -80,7 +80,7 @@ b{
     text-align: center;
     margin: 0em 0 2em 0;
     countdown{
-    font-family: 'Nexa Bold';
+    font-weight: bold;
     background-color: #D66378;
     min-width: 100%;
     padding: 0.5em 1em;
@@ -90,7 +90,7 @@ b{
     margin: 2em auto;
     }
     p{
-      font-family: 'Nexa Bold';
+      font-weight: bold;
       width: 70%;
       margin: 0 auto;
       text-align: center;
