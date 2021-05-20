@@ -1,0 +1,45 @@
+.container{
+  user-select: none;
+  padding: 1px;
+  font-family: "Nexa" !important;
+}
+
+.wrapper{
+  border-top: 1em solid rgba(202,95,122,0.8);
+  border-bottom: 1em solid rgba(202,95,122,0.8);
+  background-color: white;
+  border-radius: 20px;
+  padding: 1em;
+  font-family: "Nexa" !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  margin: 10em auto;
+}
+
+.icon{
+  margin: 0 1.5em;
+  text-align: center;
+  img{
+    width: 10em;
+  }
+  p{
+    color: #777;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 65%;
+  }
+
+  .icon{
+    margin: 1em 1.5em;
+  }
+}

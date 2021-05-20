@@ -88,8 +88,7 @@
   }
 }
 
-
-@media screen and (max-width: 1055px) {
+@media screen and (max-width: 950px) {
 .wrapper{
   font-family: "Nexa";
   text-align: center;
@@ -111,14 +110,13 @@
 }
 
 .permbajtja{
-  width: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  width: 70%;
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   margin: 3em auto;
   .perberes{
-    margin: 1.5em auto;
+    margin: 1.5em;
     width: 150px;
     opacity: 0.9;
     -webkit-transition: all 250ms ease-in-out;

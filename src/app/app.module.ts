@@ -15,6 +15,8 @@ import { ContainsComponent } from './contains/contains.component';
 import { TimeForEffectComponent } from './time-for-effect/time-for-effect.component';
 import { CookieService } from 'ngx-cookie-service';
 import { FooterComponent } from './footer/footer.component';
+import { SealsComponent } from './seals/seals.component';
+import { IconBanner1Component } from './icon-banner1/icon-banner1.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { FooterComponent } from './footer/footer.component';
     ContainsComponent,
     TimeForEffectComponent,
     FooterComponent,
+    SealsComponent,
+    IconBanner1Component,
   ],
   imports: [
     BrowserModule,
