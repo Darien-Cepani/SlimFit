@@ -7,11 +7,10 @@
 
 p{
   font-family: "Nexa" !important;
-  font-weight: bold;
   margin: 0;
   padding: 5px;
-  color: black;
-  background-color: #E6D766;
+  color: white;
+  background-color: red;
   text-align: center;
   position: -webkit-sticky;
   position: sticky;
@@ -19,4 +18,8 @@ p{
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+b{
+  font-weight: bold;
 }
