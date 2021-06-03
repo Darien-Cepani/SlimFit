@@ -5,20 +5,19 @@
 * Browsers: last 4 version
 */
 .container {
+  border: 2px solid white;
   background-color: white;
   font-family: "Nexa" !important;
   color: #28612B;
   position: relative;
-}
-
-.fruitbg{
-  position: absolute;
-  z-index: 0;
+  padding: 5em auto;
 }
 
 .wrapper{
+  border: 2px solid white;
   z-index: 5;
   font-family: "Nexa" !important;
+  padding: 5em auto;
   margin: 5em auto;
   width: 80%;
   text-align: center;
@@ -115,7 +114,7 @@
   font-family: "Nexa";
   text-align: center;
   margin: 4em auto;
-  width: 100%;
+  width: 77%;
   background: white;
   .l1{
     font-size: 2em;

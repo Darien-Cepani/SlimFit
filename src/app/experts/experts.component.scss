@@ -6,7 +6,6 @@
 */
 
 .container {
-  background: white;
   font-family: "Nexa" !important;
   width: 100%;
   border-bottom: 2em solid #CE5D7B;
@@ -42,6 +41,7 @@
     padding: 2em;
     border-radius: 20px;
     width: 100%;
+    background-color: white;
     p{
       font-size: 1.33em;
       line-height: 1.2em;
@@ -143,7 +143,7 @@
 
   .wrapper{
     margin: 5em auto 25em auto;
-    width: 90%;
+    width: 77%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -151,11 +151,7 @@
   }
 
   .left{
-    width: 100%;
     .testimony{
-      font-size: 1.2em;
-      padding: 1em;
-      width: 90%;
       .button{
         position: relative;
         top: 35px;
@@ -163,6 +159,42 @@
         left: 0;
         bottom: 0;
         margin: 1.1em auto;
+      }
+    }
+  }
+
+  .left{
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    .testimony{
+      width: 80%;
+      margin: 0 auto;
+      font-size: 1.2em;
+      .button{
+      padding: 1em 1.5em;
+      margin: 0.5em auto;
+      border-radius: 15px;
+      font-weight: bold;
+      font-size: 1.7em;
+      cursor: pointer;
+      text-align: center;
+      -webkit-transition: all 250ms ease-in-out;
+      -o-transition: all 250ms ease-in-out;
+      transition: all 250ms ease-in-out;
+      z-index: 100;
+      left: 0;
+      }
+      .button:hover, .button:focus{
+        -webkit-box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
+                box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
+        background: #fff187;
+      }
+      .button:active{
+        -webkit-box-shadow: inset 3px 3px 7px rgba(0,0,0,0.5);
+                box-shadow: inset 3px 3px 7px rgba(0,0,0,0.5);
+        background: #E6D766;
+        color: black;
       }
     }
   }

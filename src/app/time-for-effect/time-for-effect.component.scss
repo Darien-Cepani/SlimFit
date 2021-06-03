@@ -6,7 +6,6 @@
 */
 
 .container {
-  background-color: white;
   height: fit-content;
   position: relative;
   font-family: "Nexa" !important;
@@ -25,7 +24,7 @@
 
 .wrapper{
   height: 100%;
-  margin: 15em auto;
+  margin: 15em auto auto auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,7 +40,7 @@
 
 .text{
   width: 40%;
-  margin: 10em 13em;
+  margin: 15em 10em;
   h1{
     font-size: 3rem;
     line-height: 1;
@@ -93,7 +92,7 @@
   }
 
   .wrapper{
-    max-width: 90%;
+    max-width: 75%;
     margin: 0em auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

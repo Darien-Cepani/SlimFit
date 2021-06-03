@@ -445,3 +445,18 @@ td,
 th {
   padding: 0;
 }
+
+.below{
+  background-image: url("../assets/fruitbg.png");
+  background-repeat: repeat;
+  background-size: 50%;
+}
+
+@media screen and (max-width: 950px) {
+  .below{
+    background-image: url("../assets/fruitbg.png");
+    background-repeat: repeat;
+    background-size: 100%;
+  }
+}
+
