@@ -24,6 +24,40 @@ header {
   border-bottom: 1.5em solid #28612B;
 }
 
+.madein{
+  opacity: 1;
+  display: flex;
+  border-radius: 2em;
+  flex-direction: row;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: fit-content;
+  height: fit-content;
+  padding: 0.5em 1em;
+  margin: 1.5em 4.5em;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  h1{
+    background: -webkit-linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(255,162,0,1) 45%, rgba(255,162,0,1) 50%, rgba(255,162,0,1) 55%, rgba(255,0,0,1) 100%);
+    color: white;
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-size: 1em;
+    font-family: "Nexa";
+    font-weight: bold;
+    margin: 0;
+  }
+  img{
+    filter: brightness(1.15);
+    margin-right: 1em;
+    width: 2em;
+    height: 1.5em;
+    border-radius: 5px;
+  }
+}
+
 .header-bg{
   -o-object-fit: cover;
      object-fit: cover;
@@ -50,8 +84,8 @@ header {
   position: absolute;
   top: 15%;
   left: 0;
-    right: 0;
-    margin: auto;
+  right: 0;
+  margin: auto;
 }
 
 .ulje{
@@ -207,6 +241,24 @@ b{
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.3);
   }
 
+  .madein{
+    opacity: 1;
+    display: flex;
+    border-radius: 2em;
+    flex-direction: row;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5em 1em;
+    margin: 2em 4.5em;
+    justify-content: center;
+    align-items: center;
+    background: white;
+
+  }
+
   .header-bg{
     display: none;
   }
@@ -220,7 +272,7 @@ b{
     -ms-flex-pack: distribute;
         justify-content: space-around;
     width: 90%;
-    top: 2em;
+    top: 7em;
     left: 0;
     right: 0;
     margin: 0 auto;
