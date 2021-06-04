@@ -51,8 +51,8 @@ header {
       -ms-flex-align: center;
           align-items: center;
   background: rgba(255,255,255,1);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   h1{
     background: -webkit-linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(255,162,0,1) 45%, rgba(255,162,0,1) 50%, rgba(255,162,0,1) 55%, rgba(255,0,0,1) 100%);
     color: white;
@@ -261,31 +261,7 @@ b{
   }
 
   .madein{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    border-radius: 2em;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    padding: 0.5em 1em;
     margin: 2em 1em;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     background: rgba(255,255,255,0.2);
     -webkit-backdrop-filter: blur(5px);
             backdrop-filter: blur(5px);
