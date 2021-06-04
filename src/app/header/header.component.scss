@@ -42,6 +42,7 @@ header {
   h1{
     background: -webkit-linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(255,162,0,1) 45%, rgba(255,162,0,1) 50%, rgba(255,162,0,1) 55%, rgba(255,0,0,1) 100%);
     color: white;
+    background-clip: text;
     -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
     font-size: 1em;
@@ -242,21 +243,7 @@ b{
   }
 
   .madein{
-    opacity: 1;
-    display: flex;
-    border-radius: 2em;
-    flex-direction: row;
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: fit-content;
-    height: fit-content;
-    padding: 0.5em 1em;
-    margin: 2em 4.5em;
-    justify-content: center;
-    align-items: center;
-    background: white;
-
+    margin: 2em 1em;
   }
 
   .header-bg{
