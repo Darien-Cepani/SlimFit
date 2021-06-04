@@ -54,7 +54,7 @@ header {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   h1{
-    background: -webkit-linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(255,162,0,1) 45%, rgba(255,162,0,1) 50%, rgba(255,162,0,1) 55%, rgba(255,0,0,1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(255,162,0,1) 45%, rgba(255,162,0,1) 50%, rgba(255,162,0,1) 55%, rgba(255,0,0,1) 100%);
     color: white;
     background-clip: text;
     -webkit-background-clip: text;
@@ -261,7 +261,6 @@ b{
   }
 
   .madein{
-    opacity: 1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
