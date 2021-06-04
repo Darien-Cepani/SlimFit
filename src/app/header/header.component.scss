@@ -38,7 +38,8 @@ header {
   margin: 1.5em 4.5em;
   justify-content: center;
   align-items: center;
-  background: white;
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(10px);
   h1{
     background: -webkit-linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(255,162,0,1) 45%, rgba(255,162,0,1) 50%, rgba(255,162,0,1) 55%, rgba(255,0,0,1) 100%);
     color: white;
@@ -242,6 +243,28 @@ b{
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.3);
   }
 
+  .madein{
+    opacity: 1;
+    display: flex;
+    border-radius: 2em;
+    flex-direction: row;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5em 1em;
+    margin: 1.5em 4.5em;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(5px);
+    h1{
+      background:none;
+      color: white;
+    -webkit-text-fill-color: white;
+    }
+  }
   .madein{
     margin: 2em 1em;
   }
