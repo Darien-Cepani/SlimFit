@@ -467,7 +467,9 @@ th {
 
 @media screen and (max-width: 1055px) {
   .below:before{
-    background-size: 200vw !important;
+    background-image: url("../assets/fruitbgMob.png");
+  background-repeat: repeat;
+  background-size: 100vw;
   }
 }
 
