@@ -29,6 +29,75 @@
   }
 }
 
+.formbox{
+  font-family: 'Nexa' !important;
+  padding: 2.5em 1em 1.5em 1em;
+  margin: 0;
+  color: #28612B;
+  border: 2px solid #28612B;
+  border-radius: 20px;
+  background-color: rgba(255,255,255,0.5);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.price{
+  color: #28612B;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0em auto 1.5em auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.old-price{
+  font-size: 2em;
+  margin-right: 0.3em;
+  padding: 0px;
+}
+
+.new-price{
+  font-weight: bold;
+  font-size: 3em;
+  padding: 0px;
+}
+
+.strikethrough{
+  position: relative;
+}
+
+.strikethrough:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 0.08em solid;
+  border-color: red;
+  -webkit-transform:rotate(-10deg);
+  -ms-transform:rotate(-10deg);
+  transform:rotate(-10deg);
+}
+
+.zbritje{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 1.5em auto 0 auto;
+  color: #28612B;
+}
+
 .countdown{
   display: -webkit-box;
   display: -ms-flexbox;

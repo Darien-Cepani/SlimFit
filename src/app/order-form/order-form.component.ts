@@ -7,9 +7,6 @@ import { isPlatformBrowser } from '@angular/common';
   styleUrls: ['./order-form.component.scss']
 })
 export class OrderFormComponent implements OnInit {
-  oldPrice : number = 9000;
-  newPrice : number = 4500;
-
   @ViewChild('script') script!: ElementRef;
   src: any;
 
