@@ -460,14 +460,14 @@ th {
   height: 100%;
   z-index: -1;
   opacity: 0.5;
-  background-image: url("../assets/fruitbg.png");
+  background-image: url("../assets/fruitbg.jpg");
   background-repeat: repeat;
   background-size: 100vw;
 }
 
 @media screen and (max-width: 1055px) {
   .below:before{
-    background-image: url("../assets/fruitbgMob.png");
+    background-image: url("../assets/fruitbgMob.jpg");
   background-repeat: repeat;
   background-size: 100vw;
   }
