@@ -180,12 +180,21 @@
           align-items: center;
   background: white;
   h1{
-    font-family: "Nexa Bold";
+    font-family: "Nexa";
+    font-weight: bold;
     margin: 0;
   }
   p{
     font-weight: bold;
     margin: 0;
+    a{
+      color: #28612B;
+      transition: all 250ms ease-in-out;
+    }
+    a:hover{
+      color: green;
+      font-size: 1.2em;
+    }
   }
 }
 
