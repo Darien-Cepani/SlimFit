@@ -1,0 +1,108 @@
+.container{
+  width: 80%;
+  margin: 5em auto;
+  font-family: "Nexa";
+  .main{
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+    font-family: "Nexa";
+    color: #28612B;
+  }
+  .follow{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    font-family: "Nexa";
+    color: #28612B;
+    a{
+      color:#D66378;
+      transition: all 250ms ease-in-out;
+      text-decoration: none;
+    }
+    a:hover{
+      color: white;
+      text-shadow: 1px 1px 1px black;
+    }
+  }
+
+  .back{
+    width: fit-content;
+    height:fit-content;
+    font-size: 3em;
+    font-weight:bold;
+    border-radius: 50px;
+    padding: 0.3em;
+    border: 2px solid #28612B;
+    transition: all 250ms ease-in-out;
+    align-items: center;
+
+    a{
+      color:#28612B;
+      text-decoration: none;
+      align-items: center;
+    }
+    a::after{
+      color: white;
+      content: "Kthehu";
+      transition: all 250ms ease-in-out;
+      display: none;
+      opacity: 0;
+      align-items: center;
+      margin: auto 0;
+    }
+  }
+
+  .back:hover{
+    font-size: 3em;
+    background-color: #D66378;
+    font-weight:bold;
+    padding-right: 2em;
+    border: 2px solid #D66378;
+    cursor: pointer;
+    a{
+      color:white;
+      transition: all 250ms ease-in-out;
+    }
+    a::after{
+      font-size: 1em;
+      margin-left: 0.5em;
+      transition: all 250ms ease-in-out;
+      display: inline-block;
+      opacity: 1;
+    }
+  }
+
+  .policies{
+    width: 55%;
+    margin: 0 auto;
+    .title{
+      font-weight: bold;
+      font-size: 2em;
+      margin-bottom: 0.7em;
+      margin-top: 2em;
+      color: #D66378;
+      text-align: center;
+    }
+    .subtitle{
+      font-size: 1.5em;
+      margin-bottom: 0.5em;
+      line-height: 1.2em;
+      border-top: 2px solid #D66378;
+      padding-top: 0.7em;
+      span{
+        display: block;
+        margin-top: 0.5em;
+      }
+    }
+  }
+
+  .subtext{
+    color: #28612B;
+    font-weight: bold;
+    margin-top: 2em;
+    text-align: center;
+    font-family: "Nexa"
+  }
+
+}

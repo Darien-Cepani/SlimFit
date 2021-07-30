@@ -17,6 +17,11 @@ import { CookieService } from 'ngx-cookie-service';
 import { FooterComponent } from './footer/footer.component';
 import { SealsComponent } from './seals/seals.component';
 import { IconBanner1Component } from './icon-banner1/icon-banner1.component';
+import { AppRoutingModule } from './app-routing.module';
+import { TermsConditionsComponent } from './terms-conditions/terms-conditions.component';
+import { PolicyComponent } from './policy/policy.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -33,11 +38,16 @@ import { IconBanner1Component } from './icon-banner1/icon-banner1.component';
     FooterComponent,
     SealsComponent,
     IconBanner1Component,
+    TermsConditionsComponent,
+    PolicyComponent,
+    NotFoundComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
     CountdownModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRoutingModule
   ],
   providers: [CookieService],
   bootstrap: [AppComponent]
