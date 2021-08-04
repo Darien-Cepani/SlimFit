@@ -279,29 +279,36 @@
   .tags{
     font-family: "Nexa";
     margin-top: 2em;
-    padding: 1.2em 0;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    padding: 1.2em 1em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     color: #28612B;
-    -ms-flex-pack: distribute;
         justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     background: white;
-
     h1{
-      font-family: "Nexa Bold";
+      font-family: "Nexa";
+      font-weight: bold;
+      font-size: 1em;
       margin: 0;
     }
-
     p{
+      display: flex;
+      flex-direction:column;
       font-weight: bold;
       margin: 0;
+      span{
+        display: none;
+      }
+      a{
+        transition: all 250ms ease-in-out;
+      }
+      a:hover{
+        font-size: 1.2em;
+      }
     }
 
   }
