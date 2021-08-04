@@ -23,10 +23,10 @@
       -ms-user-select: none;
           user-select: none;
           background-color:white;
+          padding: 10em auto;
 }
 
 .wrapper{
-  margin: 10em auto;
   width: 90%;
 }
 
@@ -141,9 +141,12 @@ h1 {
 
 @media only screen and (max-width: 720px) {
 
+  .container{
+    padding: 10em 0;
+  }
+
   .wrapper{
     width: 75%;
-    margin: 10em 0;
     text-align: center;
   }
 

@@ -15,12 +15,13 @@
           user-select: none;
           position: relative;
           background-color:white;
+  padding: 15em auto;
+
 }
 
 .wrapper{
   width: 80%;
   height: 100%;
-  margin: 15em auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,10 +141,10 @@
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    padding: 5em auto 25em auto;
   }
 
   .wrapper{
-    margin: 5em auto 25em auto;
     width: 77%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;

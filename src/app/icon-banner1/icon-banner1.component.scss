@@ -10,9 +10,9 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  padding: 1px;
   font-family: "Nexa" !important;
   background-color:white;
+  padding: 10em auto;
 }
 
 .wrapper{
@@ -33,7 +33,6 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 80%;
-  margin: 10em auto;
 }
 
 .icon{
