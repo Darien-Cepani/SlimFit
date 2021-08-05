@@ -15,8 +15,6 @@
           user-select: none;
           position: relative;
           background-color:white;
-  padding: 15em auto;
-
 }
 
 .wrapper{
@@ -32,6 +30,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 15em auto;
 }
 
 .left{

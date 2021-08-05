@@ -14,7 +14,6 @@
   font-family: "Nexa" !important;
   background: -o-linear-gradient(58deg, rgba(40,11,11,1) 0%, rgba(120,33,33,1) 40%, rgba(211,95,95,1) 100%);
   background: linear-gradient(32deg, rgba(40,11,11,1) 0%, rgba(120,33,33,1) 40%, rgba(211,95,95,1) 100%);
-  padding: 5em auto;
 }
 
 .wrapper{
@@ -29,6 +28,7 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 80%;
+  margin: 5em auto;
 }
 
 .seal{

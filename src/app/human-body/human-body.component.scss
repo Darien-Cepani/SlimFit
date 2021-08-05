@@ -13,7 +13,7 @@
           user-select: none;
   height: fit-content;
   background-color:white;
-  padding: 5em auto;
+  padding: 5em 0;
 }
 
 .wrapper{
@@ -25,6 +25,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+          margin: 0 auto;
 }
 
 .top{
